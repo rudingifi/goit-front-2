@@ -56,27 +56,48 @@
     }
 
 
-     &__title {
-    font-family: "Roboto", sans-serif;
-        font-weight: 900;
-        font-size: 26px;
-        line-height: 136%;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-        text-align: center;
-        color: $main-color;
-        width: 100%;
-        margin-bottom: 30px;
+     @keyframes rgb-cycle {
+  0%   { color: #ff3b3b; }
+  16%  { color: #ff9f0a; }
+  33%  { color: #ffe44d; }
+  50%  { color: #34c759; }
+  66%  { color: #30b0c7; }
+  83%  { color: #bf5af2; }
+  100% { color: #ff3b3b; }
+}
 
-        @media screen and (min-width: 480px) {
-            width: 360px;
-        }
-        
-        @media screen and (min-width: 1200px) {
-            width: 696px;
-            font-size: 44px;
-    }
-    }
+
+@mixin rgb-animation($duration: 3s, $timing: linear) {
+  animation: rgb-cycle $duration $timing infinite;
+}
+
+&__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 136%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
+
+  
+  @include rgb-animation(3s);
+
+  
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    font-size: 44px;
+  }
+}
+    
+    
     &__button {
     border: none;
     font-family: "Roboto", sans-serif;

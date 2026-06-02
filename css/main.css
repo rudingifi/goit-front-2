@@ -356,6 +356,29 @@ h1, h2, h3, p {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/hero-desktop@2x.webp);
   }
 }
+@keyframes rgb-cycle {
+  0% {
+    color: #ff3b3b;
+  }
+  16% {
+    color: #ff9f0a;
+  }
+  33% {
+    color: #ffe44d;
+  }
+  50% {
+    color: #34c759;
+  }
+  66% {
+    color: #30b0c7;
+  }
+  83% {
+    color: #bf5af2;
+  }
+  100% {
+    color: #ff3b3b;
+  }
+}
 .hero__title {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -364,9 +387,9 @@ h1, h2, h3, p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  color: #FFF;
   width: 100%;
   margin-bottom: 30px;
+  animation: rgb-cycle 3s linear infinite;
 }
 @media screen and (min-width: 480px) {
   .hero__title {

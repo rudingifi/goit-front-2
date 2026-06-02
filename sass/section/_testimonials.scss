@@ -1,0 +1,170 @@
+@use"../base/variables" as *;
+
+@use"../utils/placeholder";
+
+.testimonials {
+    padding-bottom: 40px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 14px;
+        padding-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 34px;
+        padding-top: 60px;
+        
+    }
+
+    & .container {
+        justify-content: center;
+    }
+
+    &__list {
+    display: flex;
+    // flex-basis: calc((100% - 60px) / 3); 
+    gap: 30px;
+    flex-wrap: wrap;
+    }
+
+    &__item {
+    border: solid 1px $border-card;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    // height: 404px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 440px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+        height: 404px;
+        
+    }
+    
+    &:hover {
+    box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    background: $main-color;
+    .testimonials__text {
+    opacity: 1;
+    transform: translateY(0);
+    color: $main-color;
+    }
+    }
+    }
+
+    &__box {
+    position: relative;
+    overflow: hidden;
+    }
+
+    &__foto {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    @media screen and (max-width: 480px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
+
+    // .testemonials img {
+    // width: 100%;
+    // height: auto;
+    // }
+    }
+
+    &__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    color: $main-color;
+    padding: 10px 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition-property: opacity, transform;
+    transition-duration: 250ms;
+
+    @media screen and (min-width: 480px) {
+        padding: 77px 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 77px;
+        padding-right: 24px;
+        padding-left: 24px;
+        padding-top: 49px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+        
+    }
+    }
+
+    &__info {
+    padding: 20px 24px;
+    }
+
+    &__name {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: $title-color;
+    margin-bottom: 15px;
+    }
+
+    &__role {
+        font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    color: $text-color;
+    font-weight: 400;
+    font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

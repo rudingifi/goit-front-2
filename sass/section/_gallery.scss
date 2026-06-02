@@ -1,0 +1,72 @@
+@use"../base/variables" as *;
+
+@use"../utils/placeholder";
+
+.gallery {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+        padding-top: 94px;
+        display: block;
+    }
+
+    & .container {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    &__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $title-color;
+    margin-bottom: 50px;
+    }
+
+    &__list {
+    display: flex;
+    gap: 30px;
+    // margin-bottom: 95px;
+    }
+
+    &__item{
+    width: 370px;
+    height: 294px;
+    display: block;
+    position: relative;
+    }
+
+    &__image {
+    gap: 30px;
+    width: 370px;
+    height: 294px;
+    }
+
+    &__description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    color: #fff;
+    background-color: $footer-bg;
+    opacity: 80%;
+    position: absolute;
+    bottom: 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+

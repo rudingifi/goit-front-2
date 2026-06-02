@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./normalise.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+  <body>
+    
+    <main class="main">
+
+      <header class="header">
+    <div class="container"> 
+      <!-- <p class="animate__animated animate__bounce">tesst xoxoox</p> -->
+      <p class="header__webstudio">Web<span>Studio</span></p>
+
+      <button class="header__knopka" data-menu-open><svg class="header__icon">
+          <use href="./img/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <div class="menu is-hidden" data-menu>
+        <button class="menu__knopka" data-menu-close type="button"><svg class="menu__close">
+          <use href="./img/symbol-defs.svg#icon-cross"></use>
+        </svg></button>
+        <ul class="menu__list">
+          <li class="menu__item"><a href="./index.html" class="menu__link">Студія</a></li>
+          <li class="menu__item"><a href="./portfolio.html" class="menu__link active">Портфоліо</a></li>
+          <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+        </ul>
+        <ul class="menu__items">
+          <li class="menu__elm"><a href="tel:+380961111111" class="menu__contact">+38 096 111 11 11</a></li>
+          <li class="menu__elm"><a href="mailto:info@devstudio.com" class="menu__contact">info@devstudio.com</a></li>
+        </ul>
+        <ul class="menu__socials">
+          <li class="menu__sub"><a href="" class="menu__media">Instagram</a></li>
+          <li class="menu__sub"><a href="" class="menu__media">Twitter</a></li>
+          <li class="menu__sub"><a href="" class="menu__media">Facebook</a></li>
+          <li class="menu__sub"><a href="" class="menu__media">Linkedin</a></li>
+        </ul>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="./index.html">Студія</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__contacts">
+        <li class="header__item">
+          <svg class="header__eicon">
+            <use href="./img/symbol-defs.svg#icon-mail"></use>
+          </svg>
+          <a class="header__info" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="header__item">
+          <svg class="header__picon">
+            <use href="./img/symbol-defs.svg#icon-smartphone"></use>
+          </svg>
+
+          <a class="header__info" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+
+      <section class="phero">
+        <div class="container">
+          <ul class="phero__list">
+            <li class="phero__item"><a href="" class="phero__link">усі</a></li>
+            <li class="phero__item"><a href="" class="phero__link">вебсайти</a></li>
+            <li class="phero__item"><a href="" class="phero__link">додатки</a></li>
+            <li class="phero__item"><a href="" class="phero__link">дизайн</a></li>
+            <li class="phero__item"><a href="" class="phero__link">маркетинг</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="container">
+        <ul class="testimonials__list">
+          <li class="testimonials__item">
+            <div class="testimonials__box">
+            <img
+              class="testimonials__foto"
+              src="./img/technoryak.png"
+              alt="technoryak"
+            />
+            <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="testimonials__info">
+            <h2 class="testimonials__name">Технокряк</h2>
+            <p class="testimonials__role">веб-сайт</p>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <div class="testimonials__box">
+              <img
+              class="testimonials__foto"
+                src="./img/poster.png"
+                width="600"
+                alt="poster"
+              />
+              <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="testimonials__info">
+            <h2 class="testimonials__name">Постер new orlean vs golden star</h2>
+            <p class="testimonials__role">дизайн</p>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <div class="testimonials__box">
+              <img
+              class="testimonials__foto"
+                src="./img/restoran.png"
+                width="600"
+                alt="restoran"
+              />
+              <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="testimonials__info">
+            <h2 class="testimonials__name">Ресторан seafood</h2>
+            <p class="testimonials__role">додаток</p>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <div class="testimonials__box">
+              <img
+              class="testimonials__foto"
+                src="./img/project prime.png"
+                width="600"
+                alt="project prime"
+              />
+              <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+            <div class="testimonials__info">
+            <h2 class="testimonials__name">Project Prime</h2>
+            <p class="testimonials__role">маркетинг</p>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <div class="testimonials__box">
+              <img
+              class="testimonials__foto"
+                src="./img/project box.png"
+                width="600"
+                alt="project box"
+              />
+              <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            </div>
+            <div class="testimonials__info">
+            <h2 class="testimonials__name">Project Box</h2>
+            <p class="testimonials__role">додаток</p>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <div class="testimonials__box">
+              <img
+              class="testimonials__foto"
+                src="./img/inspiration.png"
+                width="600"
+                alt="inspiration"
+              />
+              <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            </div>
+            <div class="testimonials__info">
+            <h2 class="testimonials__name">Inspiration</h2>
+            <p class="testimonials__role">веб-сайт</p>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <div class="testimonials__box">
+              <img
+              class="testimonials__foto"
+                src="./img/vidanya limited.png"
+                width="600"
+                alt="vidannya limited"
+              />
+              <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            </div>
+            <div class="testimonials__info">
+            <h2 class="testimonials__name">Видання Limited editon</h2>
+            <p class="testimonials__role">дизайн</p>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <div class="testimonials__box">
+              <img
+              class="testimonials__foto"
+                src="./img/project lab.png"
+                width="600"
+                alt="project lab"
+              />
+              <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+            </div>
+            <div class="testimonials__info">
+            <h2 class="testimonials__name">Проєкт Lab</h2>
+            <p class="testimonials__role">маркетинг</p>
+            </div>
+          </li>
+          <li class="testimonials__item">
+            <div class="testimonials__box">
+              <img
+              class="testimonials__foto"
+                src="./img/growing business.png"
+                width="600"
+                alt="growing buisness"
+              />
+              <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            </div>
+            <div class="testimonials__info">
+            <h2 class="testimonials__name">Growing Buisness</h2>
+            <p class="testimonials__role">додаток</p>
+            </div>
+          </li>
+        </ul>
+        </div>
+      </section>
+      <!--register-->
+    </main>
+    
+    <footer class="contacts">
+      <div class="container">
+        <div class="double-box">
+        <div class="contacts__box">
+          <p class="contacts__title">WebStudio</p>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p class="contacts__address">м. Київ, пр-т Лесі Українки, 26</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__info">info@devstudio.com</p>
+            </li>
+            <li class="contacts__item">
+              <p class="contacts__info">+38 096 111 11 11</p>
+            </li>
+          </ul>
+        </div>
+        <div class="socials">
+        <p class="socials__title">приєднуйтесь</p>
+        <ul class="socials__list">
+          <li class="socials__item"><a href="" class="socials__link"><svg class="socials__contacts">
+            <use href="./img/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+          <li class="socials__item"><a href="" class="socials__link"><svg class="socials__contacts">
+            <use href="./img/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+          <li class="socials__item"><a href="" class="socials__link"><svg class="socials__contacts">
+            <use href="./img/symbol-defs.svg#icon-facebook-1"></use></svg></a></li>
+          <li class="socials__item"><a href="" class="socials__link"><svg class="socials__contacts">
+            <use href="./img/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
+        </ul>
+      </div>
+        </div>
+        <div class="subscribe">
+        <p class="subscribe__title">Підпишіться на розсилку</p>
+        <form class="subscribe__form" action="#" novalidate>
+      <input class="subscribe__input" type="email" placeholder="E-mail"/>
+    <button class="subscribe__button" type="submit">
+      Підписатися
+    </button>
+  </form>
+</div>
+    </div>
+  </footer>
+    <script src="./menu.js"></script>
+  </body>
+</html>

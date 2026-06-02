@@ -1,0 +1,78 @@
+@use"../base/variables" as *;
+
+@use"../utils/placeholder";
+
+.phero {
+    padding-bottom: 40px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 14px;
+        padding-top: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 34px;
+        padding-top: 94px;
+        
+    }
+
+    & .container {
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        
+    }
+    }
+
+    &__list {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link {
+    font-family: "Roboto", sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em; */
+    color: $title-color;
+    background-color: $team-bg;
+    text-transform: capitalize;
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 163%;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $title-color;
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    // cubic-bezier: (0.4, 0, 0.2, 1);
+
+    &:hover {
+    color: $main-color;
+    background-color: $accent-color;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 0px #0000001F;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001A;
+    }
+    }
+}
+
+
+
+
+   
+

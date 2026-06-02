@@ -1,0 +1,107 @@
+@use"../base/variables" as *;
+
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),
+    url("../img/mobile/hero-mobile@1x.webp");
+    padding-top: 118px;
+    padding-bottom: 118px;
+    // @extend %indents-on-sections;
+    margin: 0% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75) inset;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75) inset;
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.75) inset;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+
+     @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../img/mobile/hero-mobile@2x.webp);
+    }
+
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../img/tablet/hero-tablet@1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../img/tablet/hero-tablet@2x.webp);
+    }
+    }
+
+     @media screen and (min-width: 1200px) {
+        padding-bottom: 200px;
+        padding-top: 200px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../img/desktop/hero-desktop@1x.webp);
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+        url(../img/desktop/hero-desktop@2x.webp);
+    }
+    }
+
+
+     &__title {
+    font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 136%;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $main-color;
+        width: 100%;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 480px) {
+            width: 360px;
+        }
+        
+        @media screen and (min-width: 1200px) {
+            width: 696px;
+            font-size: 44px;
+    }
+    }
+    &__button {
+    border: none;
+    font-family: "Roboto", sans-serif;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    background: $accent-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 187%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: $main-color;
+
+    @media screen and (min-width: 1200px) {
+        width: 216px;
+    }
+    }
+    
+    & .container {
+    flex-direction: column;
+    align-items: center;
+    }
+
+
+
+}
+

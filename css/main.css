@@ -430,9 +430,9 @@ h1, h2, h3, p {
   padding-bottom: 60px;
   padding-top: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .features {
-    padding-bottom: 94px;
+    padding-bottom: 0;
     padding-top: 94px;
   }
 }
@@ -851,8 +851,12 @@ h1, h2, h3, p {
 .contacts__box {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 1199px) {
+  .contacts__box {
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts__box {
@@ -868,7 +872,6 @@ h1, h2, h3, p {
   letter-spacing: 0.03em;
   color: #2196F3;
   margin-bottom: 20px;
-  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .contacts__title {
@@ -1003,8 +1006,6 @@ h1, h2, h3, p {
 }
 @media screen and (min-width: 1200px) {
   .subscribe__title {
-    font-size: 16px;
-    letter-spacing: 6%;
     text-align: left;
     width: 100%;
   }
@@ -1287,7 +1288,7 @@ h1, h2, h3, p {
 @media screen and (min-width: 1200px) {
   .phero {
     padding-bottom: 34px;
-    padding-top: 94px;
+    padding-top: 69px;
   }
 }
 .phero .container {
@@ -1339,19 +1340,16 @@ h1, h2, h3, p {
 }
 
 .testimonials {
-  padding-bottom: 40px;
-  padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .testimonials {
-    padding-bottom: 14px;
-    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .testimonials {
-    padding-bottom: 34px;
-    padding-top: 60px;
+    padding-bottom: 94px;
   }
 }
 .testimonials .container {

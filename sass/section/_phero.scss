@@ -28,8 +28,9 @@
 
     &__list {
     display: flex;
-    gap: 8px;
+    gap: 15px;
     flex-wrap: wrap;
+    
     }
 
     &__item {
@@ -58,7 +59,7 @@
     color: $title-color;
     transition-property: color, background-color, box-shadow;
     transition-duration: 250ms;
-    // cubic-bezier: (0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
     color: $main-color;

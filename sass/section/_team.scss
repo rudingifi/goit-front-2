@@ -132,6 +132,7 @@
     border-radius: 50%;
     transition-property: background-color;
     transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
     background-color: $accent-color;
@@ -146,7 +147,8 @@
     width: 20px;
     height: 20px;
     transition-property: fill;
-    transition-duration: 350ms;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 

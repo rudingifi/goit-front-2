@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="./normalise.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -19,7 +19,7 @@
   <header class="header">
     <div class="container">
       <!-- <p class="animate__animated animate__bounce">tesst xoxoox</p> -->
-      <p class="header__webstudio">Web<span>Studio</span></p>
+      <p class="header__webstudio">Web<span class="header__span">Studio</span></p>
 
        <button class="header__knopka" data-menu-open><svg class="header__icon">
           <use href="./img/symbol-defs.svg#icon-menu"></use>
@@ -152,15 +152,26 @@
         <h1 class="gallery__title">Чим ми займаємося</h1>
         <ul class="gallery__list">
           <li class="gallery__item">
-            <img class="gallery__image" src="img/keibord.jpg" alt="keyboard" width="370" height="294" />
+            <picture>
+              <source srcset="./img/desktop/imgkeibord-desktop@1x.webp 1x, ./img/desktop/imgkeibord-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <img class="gallery__image" src="img/keibord.jpg" alt="keyboard" width="370" height="294" />
+            </picture>
             <p class="gallery__description">Десктопні додатки</p>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="img/notebuk.jpg" alt="notebuk" width="370" height="294" />
+            <picture>
+              <source srcset="./img/desktop/imgnotebuk-desktop@1x.webp 1x, ./img/desktop/imgnotebuk-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <img class="gallery__image" src="img/notebuk.jpg" alt="notebuk" width="370" height="294" />
+            </picture>
+            
             <p class="gallery__description">Мобільні додатки</p>
           </li>
           <li class="gallery__item">
-            <img class="gallery__image" src="img/ipad.jpg" alt="ipad" width="370" height="294" />
+            <picture>
+              <source srcset="./img/desktop/imgipad-desktop@1x.webp 1x, ./img/desktop/imgipad-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <img class="gallery__image" src="img/ipad.jpg" alt="ipad" width="370" height="294" />
+            </picture>
+            
             <p class="gallery__description">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -175,9 +186,9 @@
         <ul class="team__list">
           <li class="team__item">
             <picture>
-              <source srcset="./img/desktop/igor-desktop@1x.webp 1x, ./img/desktop/igor-desktop@2x.webp 2x " media="(min-width: 1200px)">
-              <source srcset="./img/tablet/igor-tablet@1x.webp 1x, ./img/tablet/igor-tablet@2x.webp 2x " media="(min-width: 768px)">
-              <source srcset="./img/mobile/igor-mobile@1x.webp 1x, ./img/mobile/igor-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <source srcset="./img/desktop/imgtechnoryak-desktop@1x.webp 1x, ./img/desktop/imgtechnoryak-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./img/tablet/imgtechnoryak-tablet@1x.webp 1x, ./img/tablet/imgtechnoryak-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source srcset  ="./img/mobile/imgtechnoryak-mobile@1x.webp 1x, ./img/mobile/imgtechnoryak-mobile@2x.webp 2x" media="(max-width: 767px)">
               <img src="./img/igor.jpg" alt="igor" class="team__foto" />
             </picture>
             <h3 class="team__name">Ігор Дем'яненко</h3>
@@ -332,7 +343,7 @@
       <div class="container">
         <div class="double-box">
         <div class="contacts__box">
-          <p class="contacts__title">WebStudio</p>
+          <p class="contacts__title">Web<span class="contacts__span">Studio</span></p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <p class="contacts__address">м. Київ, пр-т Лесі Українки, 26</p>

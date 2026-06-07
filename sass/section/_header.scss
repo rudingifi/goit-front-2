@@ -6,6 +6,7 @@
     background: $main-color;
     // height: 80px;
     @extend %heder-nuxz;
+    border: solid 1px rgba(236, 236, 236, 1);
 
     @media screen and (min-width: 768px) {
         padding: 21px 0;
@@ -45,7 +46,7 @@
     }
 }
 
-&__webstudio span {
+&__span {
     color: $logo-color;
 }
 
@@ -91,12 +92,14 @@
     border-radius: 2px;
     background-color: $accent-color;
     opacity: 0;
-    transition: opacity 250ms;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: opacity;
 }
 
 &:hover {
     color: $accent-color;
-    transition-timing-function: cubic-bezier(.89,.17,.14,.89);
+    
 }
 
 &:hover::after {

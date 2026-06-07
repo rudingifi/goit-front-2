@@ -58,6 +58,10 @@
     }
     }
 
+    &__span {
+      color: $main-color;
+    }
+
     &__list {
     display: flex;
     gap: 8px;
@@ -144,7 +148,9 @@
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
-    transition: background-color 350ms;
+    transition-duration: 250ms;
+    transition-property: background;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
     background: #2196F3;
     }

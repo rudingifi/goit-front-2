@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="./normalise.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -19,7 +19,7 @@
       <header class="header">
     <div class="container"> 
       <!-- <p class="animate__animated animate__bounce">tesst xoxoox</p> -->
-      <p class="header__webstudio">Web<span>Studio</span></p>
+      <p class="header__webstudio">Web<span class="header__span">Studio</span></p>
 
       <button class="header__knopka" data-menu-open><svg class="header__icon">
           <use href="./img/symbol-defs.svg#icon-menu"></use>
@@ -99,11 +99,13 @@
         <ul class="testimonials__list">
           <li class="testimonials__item">
             <div class="testimonials__box">
-            <img
-              class="testimonials__foto"
-              src="./img/technoryak.png"
-              alt="technoryak"
-            />
+              <picture>
+              <source srcset="./img/desktop/imgtechnoryak-desktop@1x.webp 1x, ./img/desktop/imgtechnoryak-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./img/tablet/imgtechnoryak-tablet@1x.webp 1x, ./img/tablet/imgtechnoryak-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source srcset="./img/mobile/imgtechnoryak-mobile@1x.webp 1x, ./img/mobile/imgtechnoryak-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <img class="testimonials__foto" src="./img/technoryak.png" alt="technoryak"/>
+            </picture>
+            
             <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
             <div class="testimonials__info">
@@ -113,12 +115,13 @@
           </li>
           <li class="testimonials__item">
             <div class="testimonials__box">
-              <img
-              class="testimonials__foto"
-                src="./img/poster.png"
-                width="600"
-                alt="poster"
-              />
+              <picture>
+              <source srcset="./img/desktop/imgposter-desktop@1x.webp 1x, ./img/desktop/imgposter-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./img/tablet/imgposter-tablet@1x.webp 1x, ./img/tablet/imgposter-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source srcset="./img/mobile/imgposter-mobile@1x.webp 1x, ./img/mobile/imgposter-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <img class="testimonials__foto" src="./img/poster.png" alt="poster" />
+            </picture>
+              
               <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
             <div class="testimonials__info">
@@ -128,12 +131,13 @@
           </li>
           <li class="testimonials__item">
             <div class="testimonials__box">
-              <img
-              class="testimonials__foto"
-                src="./img/restoran.png"
-                width="600"
-                alt="restoran"
-              />
+              <picture>
+              <source srcset="" media="(min-width: 1200px)">
+              <source srcset="" media="(min-width: 768px)">
+              <source srcset="" media="(max-width: 767px)">
+              <img class="testimonials__foto" src="./img/restoran.png" alt="restoran"/>
+            </picture>
+              
               <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
             <div class="testimonials__info">
@@ -143,12 +147,13 @@
           </li>
           <li class="testimonials__item">
             <div class="testimonials__box">
-              <img
-              class="testimonials__foto"
-                src="./img/project prime.png"
-                width="600"
-                alt="project prime"
-              />
+              <picture>
+              <source srcset="./img/desktop/imgposter-desktop@1x.webp 1x, ./img/desktop/imgposter-desktop@2x.webp 2x" media="(min-width: 1200px)">
+              <source srcset="./img/tablet/imgposter-tablet@1x.webp 1x, ./img/tablet/imgposter-tablet@2x.webp 2x" media="(min-width: 768px)">
+              <source src="./img/mobile/imgposter-mobile@1x.webp 1x, ./img/mobile/imgposter-mobile@2x.webp 2x" media="(max-width: 767px)">
+              <img class="testimonials__foto" src="./img/project prime.png" alt="project prime"/>
+            </picture>
+              
               <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
               </div>
             <div class="testimonials__info">
@@ -158,12 +163,13 @@
           </li>
           <li class="testimonials__item">
             <div class="testimonials__box">
-              <img
-              class="testimonials__foto"
-                src="./img/project box.png"
-                width="600"
-                alt="project box"
-              />
+              <picture>
+              <source srcset="" media="(min-width: 1200px)">
+              <source srcset="" media="(min-width: 768px)">
+              <source srcset="" media="(max-width: 767px)">
+              <img class="testimonials__foto" src="./img/project box.png" alt="project box"/>
+            </picture>
+              
               <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="testimonials__info">
@@ -173,12 +179,13 @@
           </li>
           <li class="testimonials__item">
             <div class="testimonials__box">
-              <img
-              class="testimonials__foto"
-                src="./img/inspiration.png"
-                width="600"
-                alt="inspiration"
-              />
+              <picture>
+              <source srcset="" media="(min-width: 1200px)">
+              <source srcset="" media="(min-width: 768px)">
+              <source srcset="" media="(max-width: 767px)">
+              <img class="testimonials__foto" src="./img/inspiration.png" alt="inspiration"/>
+            </picture>
+              
               <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="testimonials__info">
@@ -188,12 +195,13 @@
           </li>
           <li class="testimonials__item">
             <div class="testimonials__box">
-              <img
-              class="testimonials__foto"
-                src="./img/vidanya limited.png"
-                width="600"
-                alt="vidannya limited"
-              />
+              <picture>
+              <source srcset="" media="(min-width: 1200px)">
+              <source srcset="" media="(min-width: 768px)">
+              <source srcset="" media="(max-width: 767px)">
+              <img class="testimonials__foto" src="./img/vidanya limited.png" alt="vidannya limited"/>
+            </picture>
+              
               <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="testimonials__info">
@@ -203,12 +211,13 @@
           </li>
           <li class="testimonials__item">
             <div class="testimonials__box">
-              <img
-              class="testimonials__foto"
-                src="./img/project lab.png"
-                width="600"
-                alt="project lab"
-              />
+              <picture>
+              <source srcset="" media="(min-width: 1200px)">
+              <source srcset="" media="(min-width: 768px)">
+              <source srcset="" media="(max-width: 767px)">
+              <img class="testimonials__foto" src="./img/project lab.png" alt="project lab"/>
+            </picture>
+              
               <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
             <div class="testimonials__info">
@@ -218,12 +227,13 @@
           </li>
           <li class="testimonials__item">
             <div class="testimonials__box">
-              <img
-              class="testimonials__foto"
-                src="./img/growing business.png"
-                width="600"
-                alt="growing buisness"
-              />
+              <picture>
+              <source srcset="" media="(min-width: 1200px)">
+              <source srcset="" media="(min-width: 768px)">
+              <source srcset="" media="(max-width: 767px)">
+              <img class="testimonials__foto" src="./img/growing business.png" alt="growing buisness"/>
+            </picture>
+              
               <p class="testimonials__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
             </div>
             <div class="testimonials__info">
@@ -241,7 +251,7 @@
       <div class="container">
         <div class="double-box">
         <div class="contacts__box">
-          <p class="contacts__title">WebStudio</p>
+          <p class="contacts__title">Web<span class="contacts__span">Studio</span></p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <p class="contacts__address">м. Київ, пр-т Лесі Українки, 26</p>

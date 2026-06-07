@@ -57,6 +57,7 @@ h1, h2, h3, p {
 
 .header {
   background: #FFF;
+  border: solid 1px rgb(236, 236, 236);
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -93,7 +94,7 @@ h1, h2, h3, p {
     margin-right: 93px;
   }
 }
-.header__webstudio span {
+.header__span {
   color: #000;
 }
 .header__nav {
@@ -134,11 +135,12 @@ h1, h2, h3, p {
   border-radius: 2px;
   background-color: #2196F3;
   opacity: 0;
-  transition: opacity 250ms;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: opacity;
 }
 .header__link:hover {
   color: #2196F3;
-  transition-timing-function: cubic-bezier(0.89, 0.17, 0.14, 0.89);
 }
 .header__link:hover::after {
   opacity: 1;
@@ -716,6 +718,7 @@ h1, h2, h3, p {
   border-radius: 50%;
   transition-property: background-color;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team__link:hover {
   background-color: #2196F3;
@@ -728,7 +731,8 @@ h1, h2, h3, p {
   width: 20px;
   height: 20px;
   transition-property: fill;
-  transition-duration: 350ms;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -791,7 +795,8 @@ h1, h2, h3, p {
   justify-content: center;
   padding: 16px 10px;
   transition-property: border;
-  transition-duration: 350ms;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__item:hover {
   border: solid 1px #2196F3;
@@ -816,7 +821,8 @@ h1, h2, h3, p {
   width: 100%;
   height: 60px;
   transition-property: fill;
-  transition-duration: 350ms;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__icon:hover {
   fill: #2196F3;
@@ -877,6 +883,9 @@ h1, h2, h3, p {
   .contacts__title {
     font-size: 26px;
   }
+}
+.contacts__span {
+  color: #FFF;
 }
 .contacts__list {
   display: flex;
@@ -954,7 +963,9 @@ h1, h2, h3, p {
   height: 44px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
-  transition: background-color 350ms;
+  transition-duration: 250ms;
+  transition-property: background;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials__link:hover {
   background: #2196F3;
@@ -1301,7 +1312,7 @@ h1, h2, h3, p {
 }
 .phero__list {
   display: flex;
-  gap: 8px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 .phero__item {
@@ -1329,6 +1340,7 @@ h1, h2, h3, p {
   color: #212121;
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .phero__link:hover {
   color: #FFF;
@@ -1372,7 +1384,6 @@ h1, h2, h3, p {
 @media screen and (min-width: 768px) {
   .testimonials__item {
     width: 354px;
-    height: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1407,6 +1418,7 @@ h1, h2, h3, p {
 @media screen and (min-width: 768px) {
   .testimonials__foto {
     width: 354px;
+    height: 294px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1432,6 +1444,7 @@ h1, h2, h3, p {
   transform: translateY(100%);
   transition-property: opacity, transform;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 480px) {
   .testimonials__text {
@@ -1461,6 +1474,7 @@ h1, h2, h3, p {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 15px;
+  flex-wrap: wrap;
 }
 .testimonials__role {
   font-family: "Roboto", sans-serif;

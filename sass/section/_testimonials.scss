@@ -40,7 +40,7 @@
 
     @media screen and (min-width: 768px) {
         width: 354px;
-        height: 440px;
+        // height: 440px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -76,16 +76,12 @@
 
     @media screen and (min-width: 768px) {
         width: 354px;
+        height: 294px;
     }
 
     @media screen and (min-width: 1200px) {
         width: 370px;
     }
-
-    // .testemonials img {
-    // width: 100%;
-    // height: auto;
-    // }
     }
 
     &__text {
@@ -106,6 +102,7 @@
     transform: translateY(100%);
     transition-property: opacity, transform;
     transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 480px) {
         padding: 77px 24px;
@@ -135,6 +132,7 @@
     letter-spacing: 0.03em;
     color: $title-color;
     margin-bottom: 15px;
+    flex-wrap: wrap;
     }
 
     &__role {
